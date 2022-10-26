@@ -1,18 +1,13 @@
 import React from "react";
 import "./Card.css";
-import Picture from "../images/dresser.jpeg";
 
-function Card() {
+function Card(props) {
   return (
-    <div className="card">
-      <img
-        className="card-image"
-        src={Picture}
-        alt="Dresser with white white handles"
-      />
-      <h2>Wooden Antique Dresser</h2>
+    <div className="card" id={props.key}>
+      <img className="card-image" src={props.src} alt={props.description} />
+      <h2>{props.name}</h2>
 
-      <h3>CAD $100</h3>
+      <h3>CAD ${props.price}</h3>
       <hr />
     </div>
   );

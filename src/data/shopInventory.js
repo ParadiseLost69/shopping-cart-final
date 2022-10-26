@@ -1,3 +1,8 @@
+import brownTable from "../images/brown-table.jpg";
+import modernDresser from "../images/modern-dresser.jpg";
+import lightBrownDresser from "../images/light-brown-dresser.jpg";
+import cabinet from "../images/cabinet.jpeg";
+
 const shopInventory = [
   {
     id: 0,
@@ -6,7 +11,7 @@ const shopInventory = [
     description:
       "A stylish modern dresser that will lighten up the room and provide the perfect mixture of old-school elegance and new-school modernity.",
     quantity: 0,
-    imageSource: "../images/modern-dresser.jpg",
+    imageSource: modernDresser,
   },
   {
     id: 1,
@@ -14,7 +19,7 @@ const shopInventory = [
     price: 200,
     description: "A sleek, compact dresser that is loved for its versatility.",
     quantity: 0,
-    imageSource: "../images/light-brown-dresser.jpg",
+    imageSource: lightBrownDresser,
   },
   {
     id: 2,
@@ -23,7 +28,7 @@ const shopInventory = [
     description:
       "A white and mahogany table that fits any retro-modernist design space.",
     quantity: 0,
-    imageSource: "../images/brown-table.jpg",
+    imageSource: brownTable,
   },
   {
     id: 3,
@@ -32,7 +37,7 @@ const shopInventory = [
     description:
       "While we would personally use this to store vintage liquors and wines, it is up to you what you keep in this darkened wood cabinet.",
     quantity: 1,
-    imageSource: "",
+    imageSource: cabinet,
   },
 ];
 

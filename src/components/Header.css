@@ -1,6 +1,5 @@
 nav {
   display: flex;
-  padding: 0.5rem;
   background-color: #ffffff;
   color: var(--main-color);
   justify-content: center;
@@ -22,6 +21,7 @@ nav {
 @media (min-width: 43.75rem) {
   nav {
     background-color: rgba(255, 255, 255, 0);
+    padding: 0.5rem;
   }
   .navbar {
     justify-content: end;

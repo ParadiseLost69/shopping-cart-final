@@ -15,7 +15,10 @@ function App() {
       <Header shopStock={shopStock} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route
+          path="/shop"
+          element={<Shop shopStock={shopStock} setShopStock={setShopStock} />}
+        />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
