@@ -1,7 +1,11 @@
 import React from "react";
 import "./Header.css";
 
-function Header() {
+function Header({ shopStock }) {
+  const totalItems = shopStock.reduce((prevItem, curItem) => {
+    return prevItem + curItem.quantity;
+  }, 0);
+
   return (
     <nav>
       <ul className="navbar">
@@ -12,7 +16,7 @@ function Header() {
           <a href="/shop">SHOP</a>
         </li>
         <li>
-          <a href="/cart">CART (-)</a>
+          <a href="/cart">CART ({totalItems ? totalItems : "-"})</a>
         </li>
       </ul>
     </nav>
