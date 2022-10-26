@@ -23,7 +23,7 @@ const shopInventory = [
   },
   {
     id: 2,
-    name: "Wodden Table",
+    name: "Wooden Table",
     price: 150,
     description:
       "A white and mahogany table that fits any retro-modernist design space.",

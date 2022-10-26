@@ -3,6 +3,8 @@ nav {
   background-color: #ffffff;
   color: var(--main-color);
   justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
 
 .navbar {

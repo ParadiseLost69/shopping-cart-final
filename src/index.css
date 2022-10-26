@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Nunito&display=swap");
 
 :root {
-  --main-bg-color: #ece9d2;
+  --main-bg-color: #f6f3e8;
   --main-color: #583600;
   --secondary-color: #a48b5a;
   --header-font: "Cormorant Garamond", serif, "Times New Roman", Times,
@@ -34,7 +34,7 @@ button {
   margin: 0;
   padding: 0.4rem;
   background-color: white;
-  border: 0.1rem solid var(--secondary-color);
+  border: none;
   border-radius: 1rem;
   font-family: "Nunito";
   font-weight: 300;
@@ -45,6 +45,7 @@ button:active {
 }
 ul {
   padding-inline-start: 0;
+  margin: 0;
 }
 
 li {
@@ -55,7 +56,10 @@ h1 {
   font-size: 2rem;
   color: var(--main-color);
 }
-
+h3 {
+  font-family: var(--body-font);
+  font-weight: 100;
+}
 h1,
 h2,
 h3,

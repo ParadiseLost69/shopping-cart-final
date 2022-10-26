@@ -6,7 +6,13 @@
   margin-right: 1rem;
 }
 .card-image {
-  height: clamp(6.25rem, 20rem, 40rem);
-  width: fit-content;
+  width: clamp(10rem, 2rem + 50vw, 20rem);
+  height: auto;
   align-self: center;
 }
+
+/* @media (min-width: 43.75rem) {
+  .card {
+    height: 80vh;
+  }
+} */
