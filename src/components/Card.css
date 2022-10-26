@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.card-image {
+  height: clamp(6.25rem, 20rem, 40rem);
+  width: fit-content;
+  align-self: center;
+}

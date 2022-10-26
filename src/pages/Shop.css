@@ -1,0 +1,7 @@
+@media (min-width: 43.75rem) {
+  .shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat();
+  }
+}

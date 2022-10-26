@@ -1,0 +1,42 @@
+const shopInventory = [
+  {
+    id: 0,
+    name: "Wooden Dresser",
+    price: 1,
+    description: "",
+    quantity: 0,
+    imageSource: "",
+  },
+  {
+    id: 1,
+    name: "",
+    price: 1,
+    description: "",
+    quantity: 0,
+    imageSource: "",
+  },
+  {
+    id: 2,
+    name: "",
+    price: 1,
+    description: "",
+    quantity: 0,
+    imageSource: "",
+  },
+  {
+    id: 3,
+    name: "",
+    price: 1,
+    description: "",
+    quantity: 0,
+    imageSource: "",
+  },
+  {
+    id: 4,
+    name: "",
+    price: 1,
+    description: "",
+    quantity: 0,
+    imageSource: "",
+  },
+];
