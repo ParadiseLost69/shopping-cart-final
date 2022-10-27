@@ -10,7 +10,7 @@ const shopInventory = [
     price: 300,
     description:
       "A stylish modern dresser that will lighten up the room and provide the perfect mixture of old-school elegance and new-school modernity.",
-    quantity: 1,
+    quantity: 0,
     imageSource: modernDresser,
   },
   {
