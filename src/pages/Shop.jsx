@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Card from "../components/Card";
 import "./Shop.css";
 import ItemPage from "./item-page/ItemPage";
+import StockContext from "../StockContext";
 
-function Shop(props) {
+function Shop() {
   const [currentItem, setCurrentItem] = useState({});
+  const { shopStock, setShopStock } = useContext(StockContext);
 
   //Sets current item to render correct item page
   function selectItem(e) {
     window.scrollTo({ top: 0, behavior: "smooth" });
     const { id } = e.target;
-    props.shopStock.map((item) => {
+    shopStock.map((item) => {
       if (item.id === Number(id)) {
         setCurrentItem(item);
       }
@@ -18,7 +20,7 @@ function Shop(props) {
   }
 
   //
-  const inventory = props.shopStock.map((item) => {
+  const inventory = shopStock.map((item) => {
     return (
       <Card
         selectItem={selectItem}
@@ -48,8 +50,6 @@ function Shop(props) {
           imageSource={currentItem.imageSource}
           currentItem={currentItem}
           setCurrentItem={setCurrentItem}
-          shopStock={props.shopStock}
-          setShopStock={props.setShopStock}
         />
       )}
     </main>

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ItemPage.css";
+import StockContext from "../../StockContext";
 
 function ItemPage(props) {
+  const { shopStock, setShopStock, addToCart } = useContext(StockContext);
+
   function handleClick() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     props.setCurrentItem({});
@@ -9,8 +12,8 @@ function ItemPage(props) {
 
   function handleSubmit(id) {
     console.log(id);
-    props.setShopStock(
-      props.shopStock.map((item) => {
+    setShopStock(
+      shopStock.map((item) => {
         if (id === item.id) {
           return { ...item, quantity: item.quantity + 1 };
         } else {

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import StockContext from "../StockContext";
 import "./Header.css";
 
-function Header({ shopStock }) {
+function Header() {
+  const { shopStock } = useContext(StockContext);
+
   const totalItems = shopStock.reduce((prevItem, curItem) => {
     return prevItem + curItem.quantity;
   }, 0);
