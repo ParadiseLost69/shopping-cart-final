@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import StockContext from "../StockContext";
 import "./Header.css";
 
-function Header({ shopStock }) {
+function Header() {
+  const { shopStock } = useContext(StockContext);
+
   const totalItems = shopStock.reduce((prevItem, curItem) => {
     return prevItem + curItem.quantity;
   }, 0);
@@ -10,13 +14,13 @@ function Header({ shopStock }) {
     <nav>
       <ul className="navbar">
         <li>
-          <a href="/">HOME</a>
+          <Link to="/">HOME</Link>
         </li>
         <li>
-          <a href="/shop">SHOP</a>
+          <Link to="/shop">SHOP </Link>
         </li>
         <li>
-          <a href="/cart">CART ({totalItems ? totalItems : "-"})</a>
+          <Link to="/cart">CART ({totalItems ? totalItems : "-"})</Link>
         </li>
       </ul>
     </nav>
