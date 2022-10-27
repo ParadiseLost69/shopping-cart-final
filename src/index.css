@@ -72,5 +72,9 @@ hr {
   border: 0.0625rem solid var(--main-color);
 }
 
+p {
+  font-family: var(--body-font);
+}
+
 @media (min-width: 43.75rem) {
 }

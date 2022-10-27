@@ -6,12 +6,18 @@ function ItemPage(props) {
     props.setCurrentItem({});
   }
   return (
-    <div>
-      <h1>items</h1>
-      <h3>{props.name}</h3>
+    <div className="item-page">
+      <h2 className="item-name">{props.name}</h2>
       <img className="test-image" src={props.imageSource} alt="" />
+      <p>{props.description}</p>
       <h3>{props.price}</h3>
-      <button onClick={handleClick}>BACK</button>
+      <div className="button-group">
+        <button>ADD TO CART</button>
+        <button>CHECKOUT</button>
+      </div>
+      <button className="back-button" onClick={handleClick}>
+        {"<"}
+      </button>
     </div>
   );
 }

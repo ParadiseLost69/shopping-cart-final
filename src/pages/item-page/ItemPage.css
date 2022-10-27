@@ -1,3 +1,35 @@
 .test-image {
   height: 300px;
 }
+
+.item-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 2rem;
+}
+.item-page * {
+  margin-top: 1.5rem;
+  color: var(--main-color);
+}
+
+.item-name {
+  border-bottom: 0.025rem solid var(--secondary-color);
+  border-bottom-width: 0.08rem;
+  padding-bottom: 0.5rem;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group * {
+  margin: 0.5rem;
+}
+
+.back-button {
+  background-color: transparent;
+  place-self: start;
+  font-size: 2rem;
+}
