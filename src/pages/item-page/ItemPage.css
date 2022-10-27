@@ -1,5 +1,6 @@
-.test-image {
-  height: 300px;
+.item-image {
+  height: 40vh;
+  border-radius: 2px;
 }
 
 .item-page {
@@ -14,7 +15,7 @@
 }
 
 .item-name {
-  border-bottom: 0.025rem solid var(--secondary-color);
+  border-bottom: 0.0625rem solid var(--secondary-color);
   border-bottom-width: 0.08rem;
   padding-bottom: 0.5rem;
 }
@@ -28,8 +29,52 @@
   margin: 0.5rem;
 }
 
-.back-button {
+.back-button-mobile {
   background-color: transparent;
   place-self: start;
   font-size: 2rem;
+}
+.back-button-desktop {
+  display: none;
+}
+
+@media (min-width: 43.75rem) {
+}
+
+@media (min-width: 56.25rem) {
+  .item-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+  }
+  .item-page * {
+    margin-left: 1rem;
+  }
+  .item-image {
+    height: 70vh;
+    grid-column: 1;
+    grid-row: 1/5;
+  }
+  .item-name {
+    font-size: clamp(2rem, 3rem, 4rem);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .button-group {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  .button-group * {
+    width: 10rem;
+  }
+  .back-button-mobile {
+    display: none;
+  }
+  .back-button-desktop {
+    display: block;
+    place-self: center;
+    width: 10rem;
+  }
 }

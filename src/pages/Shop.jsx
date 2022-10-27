@@ -6,14 +6,18 @@ import ItemPage from "./item-page/ItemPage";
 function Shop(props) {
   const [currentItem, setCurrentItem] = useState({});
 
+  //Sets current item to render correct item page
   function selectItem(e) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     const { id } = e.target;
     props.shopStock.map((item) => {
-      if (item.id == id) {
+      if (item.id === Number(id)) {
         setCurrentItem(item);
       }
     });
   }
+
+  //
   const inventory = props.shopStock.map((item) => {
     return (
       <Card
@@ -44,6 +48,8 @@ function Shop(props) {
           imageSource={currentItem.imageSource}
           currentItem={currentItem}
           setCurrentItem={setCurrentItem}
+          shopStock={props.shopStock}
+          setShopStock={props.setShopStock}
         />
       )}
     </main>
