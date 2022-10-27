@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import StockContext from "../StockContext";
 import "./Header.css";
 
@@ -13,13 +14,13 @@ function Header() {
     <nav>
       <ul className="navbar">
         <li>
-          <a href="/">HOME</a>
+          <Link to="/">HOME</Link>
         </li>
         <li>
-          <a href="/shop">SHOP</a>
+          <Link to="/shop">SHOP </Link>
         </li>
         <li>
-          <a href="/cart">CART ({totalItems ? totalItems : "-"})</a>
+          <Link to="/cart">CART ({totalItems ? totalItems : "-"})</Link>
         </li>
       </ul>
     </nav>
