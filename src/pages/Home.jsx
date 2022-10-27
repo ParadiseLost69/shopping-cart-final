@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Home.css";
+import "../pages/Home.css";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 
 function Home() {
