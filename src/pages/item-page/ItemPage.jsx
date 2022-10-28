@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router";
 import "./ItemPage.css";
 import StockContext from "../../StockContext";
 
 function ItemPage(props) {
+  let navigate = useNavigate();
   const { shopStock, setShopStock, addToCart } = useContext(StockContext);
 
   function handleClick() {
@@ -22,6 +24,10 @@ function ItemPage(props) {
       })
     );
   }
+
+  function checkout() {
+    navigate("/cart");
+  }
   return (
     <div className="item-page">
       <h2 className="item-name">{props.name}</h2>
@@ -30,7 +36,7 @@ function ItemPage(props) {
       <h3>CAD ${props.price}</h3>
       <div className="button-group">
         <button onClick={() => handleSubmit(props.id)}>ADD TO CART</button>
-        <button>CHECKOUT</button>
+        <button onClick={checkout}>CHECKOUT</button>
       </div>
       <button className="back-button-mobile" onClick={handleClick}>
         {"<"}

@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./Card.css";
 
 function Card(props) {
@@ -10,10 +11,14 @@ function Card(props) {
         className="card-image"
         src={props.src}
         alt={props.description}
+        loading="lazy"
       />
-      <h2>{props.name}</h2>
+      <button id={props.id} onClick={(e) => props.selectItem(e)}>
+        SEE MORE
+      </button>
+      <h2 className="card-name">{props.name}</h2>
 
-      <h3>CAD ${props.price}</h3>
+      <h3 className="card-price">CAD ${props.price}</h3>
       <hr />
     </div>
   );

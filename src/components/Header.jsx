@@ -1,26 +1,45 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import StockContext from "../StockContext";
 import "./Header.css";
 
 function Header() {
   const { shopStock } = useContext(StockContext);
+  let location = useLocation();
+  console.log(location.pathname);
 
   const totalItems = shopStock.reduce((prevItem, curItem) => {
     return prevItem + curItem.quantity;
   }, 0);
 
+  const fontColorChange =
+    location.pathname === "/"
+      ? { color: "white" }
+      : { color: "var(--main-color)" };
+
   return (
-    <nav>
+    <nav
+      style={
+        location.pathname === "/"
+          ? { backgroundColor: "transparent", position: "absolute", right: 0 }
+          : { backgroundColor: "transparent" }
+      }
+    >
       <ul className="navbar">
         <li>
-          <Link to="/">HOME</Link>
+          <Link style={fontColorChange} to="/">
+            HOME
+          </Link>
         </li>
         <li>
-          <Link to="/shop">SHOP </Link>
+          <Link to="/shop" style={fontColorChange}>
+            SHOP{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/cart">CART ({totalItems ? totalItems : "-"})</Link>
+          <Link to="/cart" style={fontColorChange}>
+            CART ({totalItems ? totalItems : "-"})
+          </Link>
         </li>
       </ul>
     </nav>

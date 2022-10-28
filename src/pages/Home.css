@@ -29,9 +29,22 @@
 }
 .social-icons {
   display: flex;
-  grid-row: 7;
+  grid-row: 6;
 }
 
 .social-icons * {
   margin: 1rem;
+}
+
+@media (min-width: 43.75rem) {
+  .homepage {
+    height: 100vh;
+  }
+}
+
+/* Query needed to override JS in HOME.jsx that sets the style manually. Sets the correct color for mobile devices. */
+@media (max-width: 43.75rem) {
+  a {
+    color: var(--main-color) !important;
+  }
 }

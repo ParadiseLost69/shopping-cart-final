@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
 }
 .cart-page * {
   margin: 1rem;
@@ -18,4 +17,7 @@
 
 .total {
   font-size: 2rem;
+}
+.purchase-button:hover {
+  color: green;
 }

@@ -16,7 +16,7 @@ function Home() {
         <h1>Archive</h1>
       </div>
       <div className="button-section">
-        <button onClick={handleClick}>Embark</button>
+        <button onClick={handleClick}>ENTER</button>
       </div>
       <div className="social-icons">
         <BsFacebook size={30} color={"#583600"} />

@@ -38,6 +38,9 @@ button {
   border-radius: 1rem;
   font-family: "Nunito";
   font-weight: 300;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-transform: uppercase;
 }
 
 button:active {
