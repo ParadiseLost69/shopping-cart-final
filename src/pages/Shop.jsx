@@ -9,7 +9,7 @@ function Shop({ currentItem, setCurrentItem }) {
 
   //Sets current item to render correct item page
   function selectItem(e) {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo(0, 0);
     const { id } = e.target;
     shopStock.map((item) => {
       if (item.id === Number(id)) {

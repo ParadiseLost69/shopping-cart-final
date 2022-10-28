@@ -44,14 +44,18 @@ function Cart() {
     );
   }
 
+  const cartIsEmpty = total === 0;
+
   return (
     <main className="cart-page">
       <h1 className="title">Cart</h1>
+
       <div className="cart-items">{items}</div>
+      {cartIsEmpty && <h1>The cart is empty</h1>}
       <h3 className="total">Total: CAD ${total}</h3>
       <div className="cart-button-group">
         <button className="purchase-button">PURCHASE</button>
-        <button onClick={() => navigate("/shop")}>RESUME SHOPPING</button>
+        <button onClick={() => navigate("/shop")}>BACK TO SHOP</button>
       </div>
     </main>
   );

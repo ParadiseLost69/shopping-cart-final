@@ -35,6 +35,9 @@
 .social-icons * {
   margin: 1rem;
 }
+.homepage h3 {
+  color: var(--main-color);
+}
 
 @media (min-width: 43.75rem) {
   .homepage {

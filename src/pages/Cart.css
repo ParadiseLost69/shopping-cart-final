@@ -31,10 +31,14 @@
 }
 .cart-button-group {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 @media (min-width: 43.75rem) {
+  .cart-button-group {
+    flex-direction: row;
+  }
   .cart-button-group button {
     width: 15rem;
   }
