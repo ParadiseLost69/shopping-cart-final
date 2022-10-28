@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart-final/static/css/main.80ca3c22.css",
-    "main.js": "/shopping-cart-final/static/js/main.adef9a8a.js",
+    "main.css": "/shopping-cart-final/static/css/main.1639a6ab.css",
+    "main.js": "/shopping-cart-final/static/js/main.696b9124.js",
     "static/js/787.d6fe38e8.chunk.js": "/shopping-cart-final/static/js/787.d6fe38e8.chunk.js",
     "static/media/cabinet.jpeg": "/shopping-cart-final/static/media/cabinet.d2dac29f8262568bf22e.jpeg",
     "static/media/silk-marina-leonova.jpeg": "/shopping-cart-final/static/media/silk-marina-leonova.6e8bc69e3f98c9c64353.jpeg",
@@ -9,12 +9,12 @@
     "static/media/modern-dresser.jpg": "/shopping-cart-final/static/media/modern-dresser.754975887b4bf632d6f7.jpg",
     "static/media/brown-table.jpg": "/shopping-cart-final/static/media/brown-table.b3a71eae166ad74b05f1.jpg",
     "index.html": "/shopping-cart-final/index.html",
-    "main.80ca3c22.css.map": "/shopping-cart-final/static/css/main.80ca3c22.css.map",
-    "main.adef9a8a.js.map": "/shopping-cart-final/static/js/main.adef9a8a.js.map",
+    "main.1639a6ab.css.map": "/shopping-cart-final/static/css/main.1639a6ab.css.map",
+    "main.696b9124.js.map": "/shopping-cart-final/static/js/main.696b9124.js.map",
     "787.d6fe38e8.chunk.js.map": "/shopping-cart-final/static/js/787.d6fe38e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80ca3c22.css",
-    "static/js/main.adef9a8a.js"
+    "static/css/main.1639a6ab.css",
+    "static/js/main.696b9124.js"
   ]
 }
