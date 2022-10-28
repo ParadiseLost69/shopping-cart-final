@@ -13,16 +13,41 @@
 }
 .card-name,
 .card-price,
-.card-image {
+.card-image,
+.card button {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 43.75rem) {
+}
+
+@media (min-width: 68.75rem) {
   .card {
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-left: 1rem;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .card-image {
+    grid-row: 1/7;
+  }
+  .card-name {
+    grid-row: 2;
+  }
+  .card-price {
+    grid-row: 3;
   }
 
+  .card button {
+    place-self: center;
+    grid-row: 4;
+  }
+  .card-name,
+  .card-price,
+  .card-image,
   .card button {
     place-self: center;
   }

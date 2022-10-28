@@ -4,8 +4,7 @@ import "./Shop.css";
 import ItemPage from "./item-page/ItemPage";
 import StockContext from "../StockContext";
 
-function Shop() {
-  const [currentItem, setCurrentItem] = useState({});
+function Shop({ currentItem, setCurrentItem }) {
   const { shopStock, setShopStock } = useContext(StockContext);
 
   //Sets current item to render correct item page

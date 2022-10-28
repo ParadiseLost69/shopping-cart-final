@@ -2,7 +2,7 @@
 
 :root {
   --main-bg-color: #f6f3e8;
-  --main-color: #583600;
+  --main-color: #462b00;
   --secondary-color: #a48b5a;
   --header-font: "Cormorant Garamond", serif, "Times New Roman", Times,
     --apple-system, BlinkMacSystemFont;
@@ -72,12 +72,19 @@ h4 {
 }
 hr {
   width: 100%;
-  border: 0.0625rem solid var(--main-color);
+  border: 0.025rem solid var(--main-color);
 }
 
 p {
   font-family: var(--body-font);
 }
 
+path {
+  color: var(--main-color);
+}
+
 @media (min-width: 43.75rem) {
+  hr {
+    display: none;
+  }
 }

@@ -3,10 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import StockContext from "../StockContext";
 import "./Header.css";
 
-function Header() {
+function Header({ currentItem, setCurrentItem }) {
   const { shopStock } = useContext(StockContext);
   let location = useLocation();
-  console.log(location.pathname);
+
+  function handleClick() {
+    setCurrentItem({});
+  }
 
   const totalItems = shopStock.reduce((prevItem, curItem) => {
     return prevItem + curItem.quantity;
@@ -32,7 +35,7 @@ function Header() {
           </Link>
         </li>
         <li>
-          <Link to="/shop" style={fontColorChange}>
+          <Link to="/shop" onClick={handleClick} style={fontColorChange}>
             SHOP{" "}
           </Link>
         </li>

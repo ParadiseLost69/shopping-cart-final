@@ -13,12 +13,12 @@ function Card(props) {
         alt={props.description}
         loading="lazy"
       />
+
+      <h2 className="card-name">{props.name}</h2>
+      <h3 className="card-price">CAD ${props.price}</h3>
       <button id={props.id} onClick={(e) => props.selectItem(e)}>
         SEE MORE
       </button>
-      <h2 className="card-name">{props.name}</h2>
-
-      <h3 className="card-price">CAD ${props.price}</h3>
       <hr />
     </div>
   );
