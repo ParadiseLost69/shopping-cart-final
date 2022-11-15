@@ -7,6 +7,7 @@ function Cart() {
   const { shopStock, setShopStock } = useContext(StockContext);
   let navigate = useNavigate();
 
+  // eslint-disable-next-line
   const items = shopStock.map((item) => {
     if (item.quantity > 0) {
       return (
@@ -35,7 +36,7 @@ function Cart() {
     let { id } = e.target;
     setShopStock(
       shopStock.map((item) => {
-        if (id == item.id) {
+        if (Number(id) === Number(item.id)) {
           return { ...item, quantity: item.quantity - 1 };
         } else {
           return item;

@@ -5,11 +5,18 @@
   margin-left: 2rem;
   margin-right: 2rem;
 }
+
 .card-image {
   width: clamp(10rem, 2rem + 50vw, 20rem);
   height: auto;
   align-self: center;
   border-radius: 0.1rem;
+  transition: all 0.3s;
+}
+.card-image:hover {
+  cursor: pointer;
+  box-shadow: 0.065rem 0.0625rem 1rem #777;
+  transform: translateY(-0.13rem);
 }
 .card-name,
 .card-price,

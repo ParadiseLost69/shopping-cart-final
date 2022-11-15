@@ -1,5 +1,9 @@
 .homepage {
-  background-image: url(../images/silk-marina-leonova.jpeg);
+  background-image: linear-gradient(
+      rgba(233, 233, 233, 0.2),
+      rgba(233, 233, 233, 0.2)
+    ),
+    url(../images/silk-marina-leonova.jpeg);
   background-position: center;
   background-size: cover;
   height: 90vh;
@@ -9,6 +13,9 @@
 }
 .homepage h3 {
   grid-row: 2;
+  animation: fade-in 0.5s ease-in 0.5s;
+  animation-fill-mode: backwards;
+  color: var(--main-color);
 }
 
 .main-title {
@@ -23,20 +30,36 @@
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
+  animation: fade-in-right 1s ease-in;
 }
 .button-section {
+  animation: fade-in 1s ease-in;
   grid-row: 5;
 }
+
+.button-section button {
+  transition: all 0.2s ease-in-out;
+}
+.button-section button:hover {
+  cursor: pointer;
+  box-shadow: 1px 5px 10px #777;
+  transform: translateY(-0.12rem);
+}
+.button-section button:active {
+  cursor: pointer;
+  box-shadow: 1px 2px 5px #777;
+  transform: translateY(-0.09rem);
+}
+
 .social-icons {
   display: flex;
   grid-row: 6;
+  animation: fade-in-right 0.5s ease-in 0.5s;
+  animation-fill-mode: backwards;
 }
 
 .social-icons * {
   margin: 1rem;
-}
-.homepage h3 {
-  color: var(--main-color);
 }
 
 @media (min-width: 43.75rem) {

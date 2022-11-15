@@ -1,7 +1,7 @@
 {
   "name": "shopping-cart",
   "version": "0.1.0",
-  "homepage": "https://paradiselost69.github.io/shopping-cart-final/",
+  "homepage": "https://paradiselost69.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

@@ -1,16 +1,18 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import Card from "../components/Card";
 import "./Shop.css";
 import ItemPage from "./item-page/ItemPage";
 import StockContext from "../StockContext";
 
 function Shop({ currentItem, setCurrentItem }) {
+  // eslint-disable-next-line
   const { shopStock, setShopStock } = useContext(StockContext);
 
   //Sets current item to render correct item page
   function selectItem(e) {
     window.scrollTo(0, 0);
     const { id } = e.target;
+    // eslint-disable-next-line
     shopStock.map((item) => {
       if (item.id === Number(id)) {
         setCurrentItem(item);
@@ -18,7 +20,7 @@ function Shop({ currentItem, setCurrentItem }) {
     });
   }
 
-  //
+  // eslint-disable-next-line
   const inventory = shopStock.map((item) => {
     return (
       <Card

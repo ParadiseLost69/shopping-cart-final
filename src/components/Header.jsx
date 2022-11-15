@@ -30,17 +30,30 @@ function Header({ currentItem, setCurrentItem }) {
     >
       <ul className="navbar">
         <li>
-          <Link style={fontColorChange} to="/">
+          <Link
+            style={fontColorChange}
+            className={location.pathname === "/" ? "active" : ""}
+            to="/"
+          >
             HOME
           </Link>
         </li>
         <li>
-          <Link to="/shop" onClick={handleClick} style={fontColorChange}>
+          <Link
+            to="/shop"
+            className={location.pathname === "/shop" ? "active" : ""}
+            onClick={handleClick}
+            style={fontColorChange}
+          >
             SHOP{" "}
           </Link>
         </li>
         <li>
-          <Link to="/cart" style={fontColorChange}>
+          <Link
+            to="/cart"
+            className={location.pathname === "/cart" ? "active" : ""}
+            style={fontColorChange}
+          >
             CART ({totalItems ? totalItems : "-"})
           </Link>
         </li>

@@ -5,7 +5,7 @@ import StockContext from "../../StockContext";
 
 function ItemPage(props) {
   let navigate = useNavigate();
-  const { shopStock, setShopStock, addToCart } = useContext(StockContext);
+  const { shopStock, setShopStock } = useContext(StockContext);
 
   function handleClick() {
     window.scrollTo({ top: 0, behavior: "smooth" });

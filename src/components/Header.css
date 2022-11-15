@@ -20,6 +20,16 @@ nav {
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-size: 1.4rem;
+  transition: all 0.2s;
+}
+
+.navbar li:hover {
+  transform: translateY(-0.1rem);
+}
+
+.active {
+  border-bottom: 0.0625rem solid var(--main-color);
+  animation: fade-in-border 1s;
 }
 
 @media (min-width: 43.75rem) {
