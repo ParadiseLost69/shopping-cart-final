@@ -1,9 +1,9 @@
 # Shopping Cart Application
 
 ## Technologies Used
--React
--React Router
--CSS
+- React
+- React Router
+- CSS
 
 A shopping cart app utilizing React that is responsive and follows a11y and WCAG guidelines.
 
