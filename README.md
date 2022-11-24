@@ -13,6 +13,6 @@ Using React Router and maintaining state was a difficulty. It led me into some r
 
 Additionally, I ran into some issues regarding styles that were set in CSS being overridden by programatically set styles in JS. I have documented these oddities and explained the reasoning behind these decisions in the documentation. 
 
-#### Knowledge gained
+### Knowledge gained
 
 This project really helped me gain a deeper understanding of state in React and how to manage it more effectively.
